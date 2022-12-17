@@ -1,4 +1,4 @@
-from day2.part_2 import compute
+from day2.part_2 import Day2Part2
 
 INPUT_S = """\
 A Y
@@ -10,4 +10,4 @@ OUTPUT = 12
 
 
 def test_part_2():
-    assert compute(INPUT_S) == OUTPUT
+    assert Day2Part2.compute(INPUT_S) == OUTPUT
