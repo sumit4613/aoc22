@@ -14,7 +14,7 @@ class Day3Part1(Solution):
         for line in input_str.splitlines():
             first_half, second_half = line[: len(line) // 2], line[len(line) // 2 :]
             first_half_count, second_half_count = collections.Counter(
-                first_half
+                first_half,
             ), collections.Counter(second_half)
             (common_item,) = first_half_count & second_half_count
             if common_item.islower():
